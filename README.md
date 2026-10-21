@@ -1,3 +1,5 @@
+[![Version](https://img.shields.io/github/v/release/Screenly/flying-toasters-app)](https://github.com/Screenly/flying-toasters-app/releases/latest)
+
 # Flying Toasters
 
 ![Flying Toaster Image](static/img/flyingToasters.jpg)
