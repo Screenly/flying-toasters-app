@@ -1,3 +1,5 @@
+[![Version](https://img.shields.io/github/v/release/Screenly/flying-toasters-app)](https://github.com/Screenly/flying-toasters-app/releases/latest)
+
 # Flying Toasters
 
 ![Flying Toaster Image](static/img/flyingToasters.jpg)
@@ -24,3 +26,19 @@ $ screenly edge-app version \
 ## Credits
 
 The original CSS/HTML was written by [Bryan Braun](https://github.com/bryanbraun/after-dark-css). This package merely re-packaged this as an Edge App (with permission from Bryan).
+
+## Releasing
+
+Pushes to `main` deploy to stage automatically. To release to production, tag a commit on `main` and push the tag (the workflow refuses tags not on `main`):
+
+```bash
+git checkout main && git pull
+git tag v26.10.0
+git push origin v26.10.0
+```
+
+Then publish a GitHub Release whose notes list the pull requests merged since the previous release. Add `--draft` to review the notes before publishing:
+
+```bash
+gh release create v26.10.0 --verify-tag --generate-notes --title v26.10.0
+```
