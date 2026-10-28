@@ -29,7 +29,7 @@ The original CSS/HTML was written by [Bryan Braun](https://github.com/bryanbraun
 
 ## Releasing
 
-Pushes to `main` deploy to stage automatically. To release to production, tag a commit on `main` and push the tag (the workflow refuses tags not on `main`):
+Pushes to `main` start a stage deploy, which waits for approval. To release to production, tag a commit on `main` and push the tag (the workflow refuses tags not on `main`); the production deploy also waits for approval:
 
 ```bash
 git checkout main && git pull
