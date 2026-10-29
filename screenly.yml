@@ -1,7 +1,7 @@
 ---
 syntax: manifest_v1
 description: Flying Toasters App
-icon: 'https://playground.srly.io/edge-apps/flying-toasters/static/img/icon.svg'
+icon: https://playground.srly.io/edge-apps/icons/flying-toasters.svg
 author: Bryan Braun
 categories:
   - Just for Fun
